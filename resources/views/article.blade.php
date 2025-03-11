@@ -7,25 +7,25 @@
 </head>
 <body>
     <h2>list de products</h2>
-    <a href="{{ "products/create" }}">add new product</a>
+    <a href="{{ "articls/create" }}">add new article</a>
     <table>
         <thead>
             <tr>
                 <th>id</th>
                 <th>name</th>
                 <th>description</th>
-                <th>price</th>
-                <th>quantity</th>
+            
+            
             </tr>
 
         </thead>
-        @foreach ($products as $product )
+        @foreach ($articls as $article )
         <tr>
-            <td>{{ $product->id }}</td>
-            <td>{{ $product->name }}</td>
-            <td>{{ $product->description }}</td>
-            <td>{{ $product->price }}</td>
-            <td>{{ $product->quantite }}</td>
+            <td>{{ $article->id }}</td>
+            <td>{{ $article->name }}</td>
+            <td>{{ $article->description }}</td>
+            
+        
         </tr>
         
         @endforeach

@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>add new product</h2>
-    <form action="{{ url("products") }}" method ="POST">
+    <h2>add new article</h2>
+    <form action="{{ url("articls") }}" method ="POST">
         @csrf
         <input type="text" name="name">
         <input type="text" name="description">
-        <input type="number" name = "price">
-        <input type="number" name = "quantity">
-        <button type="submit">add product</button>
+    
+        
+        <button type="submit">add article</button>
 
 
         
